@@ -37,3 +37,20 @@
     transform: translateX(-50%) translateY(-10%);
 }
 
+/* Full page width */
+
+@media screen and (min-width: 48em) {
+    .page-full-width #primary {
+        width: 100% !important;
+    }
+}
+
+.page-full-width #primary .entry-header {
+    width: 100%;
+}
+
+.page-full-width #secondary {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
