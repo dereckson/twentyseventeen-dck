@@ -1,0 +1,39 @@
+/*
+ Theme Name:   Twenty Seventeen DcK (beta)
+ Description:  Twenty Seventeen Child Theme for dereckson.be
+ Author:       the WordPress team for Twenty Seventeen ; Dereckson fur customization
+ Template:     twentyseventeen
+ Description:  Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Seventeen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+ Version:      0.1
+ Tags:         black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twenty-seventeen
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* For browsers that support 'object-fit' */
+@supports ( object-fit: cover ) {
+    .has-header-image .custom-header-media img,
+    .has-header-video .custom-header-media video,
+    .has-header-video .custom-header-media iframe,
+    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+        height: inherit !important;
+        -ms-transform: translateX(0) translateY(-10%) !important;
+        -moz-transform: translateX(0) translateY(-10%) !important;
+        -webkit-transform: translateX(0) translateY(-10%) !important;
+        transform: translateX(0) translateY(-10%) !important;
+    }
+}
+
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+    top: 0 !important;
+    bottom: inherit !important;
+    -ms-transform: translateX(-50%) translateY(-10%);
+    -moz-transform: translateX(-50%) translateY(-10%);
+    -webkit-transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-50%) translateY(-10%);
+}
+
